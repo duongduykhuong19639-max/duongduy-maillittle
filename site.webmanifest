@@ -1,0 +1,17 @@
+{
+  "name": "Reliable Helper Gia My",
+  "short_name": "Reliable Helper",
+  "description": "Global utility app team building efficient and human-centered mobile products.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2f4ef",
+  "theme_color": "#10181e",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
