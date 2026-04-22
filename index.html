@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -90,19 +90,26 @@
     </header>
 
     <main>
+      <!-- Hero Background Orbs -->
+      <div class="hero-bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy" data-reveal>
-            <span class="kicker">Global product team</span>
-            <h1>Utility apps that make daily life faster, calmer, and more meaningful.</h1>
+            <span class="kicker">Global product team 鈥?Hanoi, Vietnam</span>
+            <h1>Utility apps that make daily life faster, calmer, and&nbsp;more meaningful.</h1>
             <p class="lead">Reliable Helper Gia My is a product development team serving users across Europe and North America. We build mobile utility applications, publish to the App Store and other app marketplaces, and support partners with app design consulting plus full-cycle research, design, engineering, release, and growth consulting.</p>
             <div class="hero-actions">
-              <a class="button" href="services.html">Explore services</a>
-              <a class="button-secondary" href="contact.html">Contact the team</a>
+              <a class="button" href="services.html">Explore our services</a>
+              <a class="button-secondary" href="contact.html">Start a conversation</a>
             </div>
             <ul class="hero-points">
               <li>
-                <strong>Team name</strong>
+                <strong>Team</strong>
                 Reliable Helper Gia My / reliablehelpergiamy.com
               </li>
               <li>
@@ -124,19 +131,43 @@
             <div class="media-stack">
               <div class="media-top">
                 <img src="images/hero-network.png" alt="Abstract product operations dashboard inspired visual" data-parallax>
-                <div class="overlay-badge">
-                  <span class="micro-label">App Store ready</span>
+                <div class="overlay-badge float-badge">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="micro-label">App Store &amp; Google Play ready</span>
                 </div>
               </div>
               <div class="media-bottom">
                 <img src="images/phone-stack.png" alt="Mobile product stack with utility app screens">
-                <div class="floating-note">From focus tools to device monitoring, our apps are built for real routines, not feature clutter.</div>
+                <div class="floating-note float-badge">From focus tools to device monitoring 鈥?built for real routines, not feature clutter.</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Stats Band -->
+      <section class="stats-band">
+        <div class="container">
+          <div class="stat-item" data-reveal>
+            <span class="stat-num"><span data-count="6" data-suffix="+">6+</span></span>
+            <span class="stat-label">App categories published</span>
+          </div>
+          <div class="stat-item delay-1" data-reveal>
+            <span class="stat-num"><span data-count="2">2</span></span>
+            <span class="stat-label">Product consulting lines</span>
+          </div>
+          <div class="stat-item delay-2" data-reveal>
+            <span class="stat-num"><span data-count="100" data-suffix="%">100%</span></span>
+            <span class="stat-label">English-first global delivery</span>
+          </div>
+          <div class="stat-item delay-3" data-reveal>
+            <span class="stat-num"><span data-count="2">2</span></span>
+            <span class="stat-label">Monetization models: IAA + IAP</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- What we build -->
       <section>
         <div class="container">
           <div class="section-head" data-reveal>
@@ -144,52 +175,146 @@
               <span class="eyebrow">What we build</span>
               <h2>One team, multiple everyday utility experiences.</h2>
             </div>
-            <p>We design and release tools for attention management, routine building, idea capture, lightweight decision support, mood reflection, and device awareness, with each product tuned for a clear, practical scenario.</p>
+            <p>We design and release tools for attention management, routine building, idea capture, lightweight decision support, mood reflection, and device awareness 鈥?each tuned for a clear, practical scenario.</p>
           </div>
-          <div class="app-grid">
-            <article class="card" data-reveal>
-              <svg viewBox="0 0 48 48" fill="none"><path d="M24 8V40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M11 21L24 8L37 21" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="30" r="10" stroke="currentColor" stroke-width="3"/></svg>
-              <h3>Focus and attention tools</h3>
+          <div class="app-showcase">
+            <article class="app-showcase-card" data-reveal>
+              <div class="app-icon-wrap">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 8V40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M11 21L24 8L37 21" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="30" r="10" stroke="currentColor" stroke-width="3"/></svg>
+              </div>
+              <h3>Focus &amp; Attention Tools</h3>
               <p>Timer systems, mindful session flows, and progress visibility that help users protect attention in noisy digital environments.</p>
+              <span class="app-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/></svg>
+                Prism Life
+              </span>
             </article>
-            <article class="card delay-1" data-reveal>
-              <svg viewBox="0 0 48 48" fill="none"><path d="M14 23L21 30L34 17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="8" y="8" width="32" height="32" rx="10" stroke="currentColor" stroke-width="3"/></svg>
-              <h3>Habit tracking tools</h3>
+            <article class="app-showcase-card delay-1" data-reveal>
+              <div class="app-icon-wrap">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M14 23L21 30L34 17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="8" y="8" width="32" height="32" rx="10" stroke="currentColor" stroke-width="3"/></svg>
+              </div>
+              <h3>Habit Tracking Tools</h3>
               <p>Simple loops, meaningful streak logic, and visual reinforcement designed to help daily routines become sustainable.</p>
+              <span class="app-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/></svg>
+                Prism Life
+              </span>
             </article>
-            <article class="card delay-2" data-reveal>
-              <svg viewBox="0 0 48 48" fill="none"><path d="M24 10L27.8 18.2L37 19.5L30.3 26L31.9 35L24 30.7L16.1 35L17.7 26L11 19.5L20.2 18.2L24 10Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
-              <h3>Idea capture tools</h3>
+            <article class="app-showcase-card delay-2" data-reveal>
+              <div class="app-icon-wrap">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 10L27.8 18.2L37 19.5L30.3 26L31.9 35L24 30.7L16.1 35L17.7 26L11 19.5L20.2 18.2L24 10Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>Idea Capture Tools</h3>
               <p>Fast-note and inspiration preservation products for moments when speed and clarity matter more than complexity.</p>
+              <span class="app-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/></svg>
+                PopTooly
+              </span>
             </article>
-            <article class="card" data-reveal>
-              <svg viewBox="0 0 48 48" fill="none"><path d="M24 8C32.8 8 40 15.2 40 24C40 32.8 32.8 40 24 40C15.2 40 8 32.8 8 24C8 15.2 15.2 8 24 8Z" stroke="currentColor" stroke-width="3"/><path d="M24 16V24L30 28" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <h3>Decision support tools</h3>
+            <article class="app-showcase-card" data-reveal>
+              <div class="app-icon-wrap">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 8C32.8 8 40 15.2 40 24C40 32.8 32.8 40 24 40C15.2 40 8 32.8 8 24C8 15.2 15.2 8 24 8Z" stroke="currentColor" stroke-width="3"/><path d="M24 16V24L30 28" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>Decision Support Tools</h3>
               <p>Lightweight frameworks for small everyday choices, helping users move forward with less friction and more confidence.</p>
+              <span class="app-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/></svg>
+                PopTooly
+              </span>
             </article>
-            <article class="card delay-1" data-reveal>
-              <svg viewBox="0 0 48 48" fill="none"><path d="M24 38C33 31.4 38 26.2 38 19.6C38 14.3 34.2 10 29.1 10C26.1 10 24.2 11.5 22.8 13.2C21.3 11.5 19.4 10 16.4 10C11.3 10 7.5 14.3 7.5 19.6C7.5 26.2 12.5 31.4 21.5 38L24 39.8L26.5 38Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
-              <h3>Mood logging tools</h3>
+            <article class="app-showcase-card delay-1" data-reveal>
+              <div class="app-icon-wrap">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 38C33 31.4 38 26.2 38 19.6C38 14.3 34.2 10 29.1 10C26.1 10 24.2 11.5 22.8 13.2C21.3 11.5 19.4 10 16.4 10C11.3 10 7.5 14.3 7.5 19.6C7.5 26.2 12.5 31.4 21.5 38L24 39.8L26.5 38Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>Mood Logging Tools</h3>
               <p>Daily emotional reflection experiences that respect privacy while encouraging healthy self-awareness patterns.</p>
+              <span class="app-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/></svg>
+                Prism Life
+              </span>
             </article>
-            <article class="card delay-2" data-reveal>
-              <svg viewBox="0 0 48 48" fill="none"><rect x="12" y="8" width="24" height="32" rx="6" stroke="currentColor" stroke-width="3"/><path d="M18 14H30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M18 22H30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M18 30H24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
-              <h3>Device monitoring tools</h3>
+            <article class="app-showcase-card delay-2" data-reveal>
+              <div class="app-icon-wrap">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="12" y="8" width="24" height="32" rx="6" stroke="currentColor" stroke-width="3"/><path d="M18 14H30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M18 22H30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M18 30H24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Device Monitoring Tools</h3>
               <p>Status, storage, battery, and operational awareness products that help users understand and manage their devices better.</p>
+              <span class="app-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/></svg>
+                PopTooly
+              </span>
             </article>
           </div>
         </div>
       </section>
 
+      <!-- Product Lines -->
+      <section>
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div>
+              <span class="eyebrow">Product lines</span>
+              <h2>Two distinct app families, one team vision.</h2>
+            </div>
+            <p>Our products are organized under two brand lines, each serving a different user mindset and daily scenario.</p>
+          </div>
+          <div class="product-lines">
+            <div class="product-line-card dark" data-reveal>
+              <div>
+                <span class="product-line-label">Prism Life</span>
+                <h3>Productivity &amp; Self-growth</h3>
+                <p>Tools designed to help users focus, build habits, and achieve personal growth. Prism Life apps assist users in improving daily productivity, realizing self-growth, and forming sustainable life routines.</p>
+              </div>
+              <div class="icon-row">
+                <span class="icon-badge" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.1);">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                  Focus tools
+                </span>
+                <span class="icon-badge" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.1);">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="4" stroke="currentColor" stroke-width="2"/><path d="M8 10l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Habit tracking
+                </span>
+                <span class="icon-badge" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.1);">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                  Mood logging
+                </span>
+              </div>
+            </div>
+            <div class="product-line-card light" data-reveal>
+              <div>
+                <span class="product-line-label">PopTooly</span>
+                <h3>Fun &amp; Daily Convenience</h3>
+                <p>Apps that add joy and convenience to everyday life. PopTooly captures inspiration, supports daily decisions, and monitors device status 鈥?making daily life more fun and convenient.</p>
+              </div>
+              <div class="icon-row">
+                <span class="icon-badge">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                  Idea capture
+                </span>
+                <span class="icon-badge">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Decision tools
+                </span>
+                <span class="icon-badge">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="4" stroke="currentColor" stroke-width="2"/><path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  Device monitor
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Consulting & Beyond -->
       <section>
         <div class="container split-grid">
           <div class="split-visual" data-reveal>
             <img src="images/campus-atmosphere.png" alt="Creative studio atmosphere with product strategy materials">
           </div>
           <div class="split-copy" data-reveal>
-            <span class="eyebrow">Beyond basic services</span>
+            <span class="eyebrow">Beyond the app portfolio</span>
             <h2>Consulting for teams building utility products from zero to scale.</h2>
-            <p>In addition to core product delivery, Reliable Helper Gia My offers app design consulting and full-process utility app development consulting. We help external teams clarify opportunity mapping, product positioning, interface systems, release readiness, monetization choices, and marketplace compliance from the first concept through mature iteration.</p>
+            <p>In addition to core product delivery, Reliable Helper Gia My offers app design consulting and full-process utility app development consulting. We help external teams clarify opportunity mapping, product positioning, interface systems, release readiness, monetization choices, and marketplace compliance.</p>
             <ul class="inline-facts">
               <li>
                 <strong>Design consulting</strong>
@@ -201,23 +326,24 @@
               </li>
               <li>
                 <strong>Marketplace delivery</strong>
-                Support for Apple App Store and other application marketplaces with global-ready content and publishing guidance.
+                Support for Apple App Store, Google Play, and other application marketplaces with global-ready content and publishing guidance.
               </li>
             </ul>
             <div class="action-row">
               <a class="button" href="services.html">See consulting scope</a>
-              <a class="button-secondary" href="privacy-policy.html">Review compliance policy</a>
+              <a class="button-secondary" href="contact.html">Request a consultation</a>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Core philosophy -->
       <section>
         <div class="container">
           <div class="section-head" data-reveal>
             <div>
-              <span class="eyebrow">How we work</span>
-              <h2>Designed around user needs, refined for real-life scenarios.</h2>
+              <span class="eyebrow">Core philosophy</span>
+              <h2>Practical as a foundation, aesthetics as wings.</h2>
             </div>
             <p>Our team builds with a simple principle: every tool should either reduce friction, increase clarity, or add a small layer of delight to ordinary routines.</p>
           </div>
@@ -231,17 +357,65 @@
               <p>Productivity matters, but so does emotional comfort. We tune copy, motion, and pacing so tools feel supportive rather than clinical.</p>
             </article>
             <article class="metric-card delay-2" data-reveal>
-              <strong>Global readiness</strong>
-              <p>Language, privacy, monetization, store metadata, and policy compliance are planned from the outset for Europe and North America.</p>
+              <strong>Reject redundant design</strong>
+              <p>We refuse feature bloat. Every interaction is earned by a real user scenario, not added for the sake of completeness.</p>
             </article>
             <article class="metric-card delay-3" data-reveal>
-              <strong>Design + engineering continuity</strong>
-              <p>Research, visual systems, prototyping, implementation, release, and post-launch iteration stay aligned under one product mindset.</p>
+              <strong>Global readiness</strong>
+              <p>Language, privacy, monetization, store metadata, and policy compliance are planned from the outset for Europe and North America.</p>
             </article>
           </div>
         </div>
       </section>
 
+      <!-- Feature strip dark -->
+      <section style="padding: 0 0 40px;">
+        <div class="container">
+          <div class="feature-strip" data-reveal>
+            <div class="feature-strip-item">
+              <svg class="feature-strip-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="3"/><path d="M24 16v8l5 5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <h3>IAA Monetization</h3>
+              <p>Our apps leverage app open ads, rewarded video, interstitial, and banner advertising via top-tier networks including Google AdMob, Meta Audience Network, AppLovin MAX, Unity Ads, and more.</p>
+            </div>
+            <div class="feature-strip-item">
+              <svg class="feature-strip-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="8" y="14" width="32" height="22" rx="6" stroke="currentColor" stroke-width="3"/><path d="M16 27h6M28 27h4M16 21h16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+              <h3>IAP Subscriptions &amp; Purchases</h3>
+              <p>In-app purchases, subscriptions, premium unlocks, and consumables distributed via Apple App Store and Google Play billing systems with full compliance and entitlement management.</p>
+            </div>
+            <div class="feature-strip-item">
+              <svg class="feature-strip-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 8v8M36 12l-5.7 5.7M40 24h-8M36 36l-5.7-5.7M24 40v-8M12 36l5.7-5.7M8 24h8M12 12l5.7 5.7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+              <h3>Global Privacy Compliance</h3>
+              <p>GDPR, CCPA, COPPA, LGPD, PIPL, and other major privacy frameworks are addressed in our product and policy design from day one, for every market we serve.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision Panel -->
+      <section style="padding: 0 0 40px;">
+        <div class="container">
+          <div class="vision-panel" data-reveal>
+            <span class="eyebrow">Our vision</span>
+            <h2>We build apps that grow with you and brighten the ordinary.</h2>
+            <p>We are committed to "users first" 鈥?continuously improving product experiences, empowering users to enhance productivity through Prism Life and achieve self-growth, while adding joy and convenience to daily life through PopTooly. We will continue to deepen our work in utility apps and craft more features that meet user needs.</p>
+            <div class="action-row" style="justify-content:center;">
+              <a class="button" href="culture.html">Learn about our culture</a>
+              <a class="button-secondary" href="contact.html" style="background:rgba(255,255,255,0.14);border-color:rgba(255,255,255,0.18);color:white;">Talk to the team</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech ribbon -->
+      <section style="padding: 0 0 40px;">
+        <div class="tech-ribbon" aria-hidden="true">
+          <div class="tech-ribbon-track">
+            <span>Google AdMob</span><span>Meta Audience Network</span><span>AppLovin MAX</span><span>Unity Ads</span><span>ironSource</span><span>Mintegral</span><span>Pangle</span><span>Apple App Store</span><span>Google Play</span><span>GDPR compliant</span><span>CCPA ready</span><span>COPPA safe</span><span>App Tracking Transparency</span><span>RevenueCat</span><span>Firebase Analytics</span><span>Semantic HTML</span><span>Open Graph</span><span>Sitemap</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEO readiness panel -->
       <section>
         <div class="container">
           <div class="panel" style="padding: 30px;" data-reveal>
@@ -250,28 +424,23 @@
                 <span class="eyebrow">Marketplace compatibility</span>
                 <h2>Built for discoverability, review readiness, and long-term search visibility.</h2>
               </div>
-              <p>This website is structured with crawlable navigation, semantic headings, accessible content, metadata, schema markup, robots guidance, a sitemap, and performance-conscious assets to support search engine indexing expectations.</p>
+              <p>This website uses crawlable navigation, semantic headings, accessible content, metadata, schema markup, robots guidance, a sitemap, and performance-conscious assets to support search engine indexing.</p>
             </div>
             <div class="marquee" aria-hidden="true">
               <div class="marquee-track">
                 <span>Semantic HTML structure</span>
                 <span>Open Graph metadata</span>
                 <span>Canonical URLs</span>
-                <span>Structured data</span>
+                <span>Structured data schema.org</span>
                 <span>Responsive layout</span>
                 <span>Accessible navigation</span>
                 <span>Robots and sitemap</span>
                 <span>Large image previews</span>
                 <span>Fast-loading SVG icons</span>
-                <span>Semantic HTML structure</span>
-                <span>Open Graph metadata</span>
-                <span>Canonical URLs</span>
-                <span>Structured data</span>
-                <span>Responsive layout</span>
-                <span>Accessible navigation</span>
-                <span>Robots and sitemap</span>
-                <span>Large image previews</span>
-                <span>Fast-loading SVG icons</span>
+                <span>App Store ready</span>
+                <span>Google Play compliant</span>
+                <span>Privacy Nutrition Labels</span>
+                <span>Data Safety Form</span>
               </div>
             </div>
           </div>
@@ -310,7 +479,7 @@
             <li><a href="culture.html">Corporate Culture</a></li>
             <li><a href="news.html">Company News</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li>© <span data-year></span> Reliable Helper Gia My</li>
+            <li>漏 <span data-year></span> Reliable Helper Gia My</li>
           </ul>
         </div>
       </div>

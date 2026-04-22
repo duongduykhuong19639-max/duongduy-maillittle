@@ -1,0 +1,45 @@
+# Reliable Helper Gia My - Ads.txt File
+# Last Updated: April 22, 2026
+# Version: 1.0.0
+
+# This ads.txt file is maintained per the Trustworthy Accountability Group (TAG) specification
+# and implements transparency for programmatic advertising partners and exchanges.
+
+# Domain Owner Information
+# Company: Reliable Helper Gia My
+# Website: https://reliablehelpergiamy.com
+# Contact: contact@reliablehelpergiamy.com
+
+# Primary Advertising Platforms and SSPs
+google.com, ca-pub-xxxxxxxxxxxxxxxx, DIRECT, f08c47fec0942fa0
+google.com, pub-xxxxxxxxxxxxxxxx, DIRECT, f08c47fec0942fa0
+
+# AppLovin Mediation
+applovin.com, xxxxxxxxxxxxxxxx, DIRECT
+
+# Programmatic Exchanges (OpenRTB 2.5)
+rubicon.com, xxxxxxx, DIRECT, 0bfd66d529a55807
+openx.com, xxxxxxx, DIRECT, 6a698e2182dcc82e
+index.exchange, xxxxxxx, DIRECT, 50b1c356f2c5c8fc
+pubmatic.com, xxxxxxx, DIRECT, 9adc429266ce97d0
+
+# Advertiser-Specific Declarations (for direct partnerships)
+# Example: advertiser.com, xxxxxxx, DIRECT, [CERT]
+# Example: advertiser.com, xxxxxxx, RESELLER, [CERT]
+
+# Agency and Reseller Declarations
+# (List verified agencies and partners authorized to resell inventory)
+
+# Reseller Network - AppLovin MAX
+applovin.com, xxxxxxxxxxxxxxxx, RESELLER
+mintegral.com, xxxxxxxx, RESELLER
+smaato.com, xxxxxxxx, RESELLER
+rhythmone.com, xxxxxxxx, RESELLER
+
+# Additional Notes
+# - This file is regularly reviewed for compliance and accuracy
+# - Entries are ordered by platform importance and traffic volume
+# - Invalid or expired entries are removed quarterly
+# - All listed partners maintain current Privacy Policies
+# - Advertising complies with Apple App Store Review Guidelines, Google Play policies
+# - IAB TCF (Transparency and Consent Framework) compliance maintained

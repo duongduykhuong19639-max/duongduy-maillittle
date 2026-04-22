@@ -1,4 +1,54 @@
+# Reliable Helper Gia My - Robots.txt Configuration
+# Last Updated: April 22, 2026
+# Global SEO Configuration for Search Engine Crawlers
+
 User-agent: *
 Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /svg/
+Disallow: /admin/
+Disallow: /private/
+Disallow: *.pdf$
+Disallow: *.doc$
+Disallow: *.docx$
 
+# Google-specific crawling directives
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing-specific crawling directives
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap declaration for all search engines
 Sitemap: https://reliablehelpergiamy.com/sitemap.xml
+
+# Global site configuration
+Request-rate: /: 10/1s
+Visit-time: 0000-2359
+
+# Media files crawling
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /svg/
+
+# Global crawl-delay (seconds)
+Crawl-delay: 0.5
