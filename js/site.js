@@ -6,6 +6,9 @@
 (function () {
   'use strict';
 
+  // Enable progressive enhancement hooks after JavaScript is available.
+  document.body.classList.add('js-ready');
+
   /* ── 1. UTILITIES ── */
   const qs = (sel, ctx = document) => ctx.querySelector(sel);
   const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
@@ -78,11 +81,15 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.14, rootMargin: '0px 0px -6% 0px' });
+    }, { threshold: 0.02, rootMargin: '0px 0px -6% 0px' });
 
     revealNodes.forEach(node => {
       node.classList.add('reveal');
-      observer.observe(node);
+      if (node.offsetHeight > window.innerHeight * 1.2) {
+        node.classList.add('is-visible');
+      } else {
+        observer.observe(node);
+      }
     });
   } else {
     revealNodes.forEach(n => n.classList.add('is-visible'));
